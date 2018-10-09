@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/single_mode"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/edit_margin_top"
+            android:src="@drawable/singel"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/single_mode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="SINGLE MODE" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/double_mode"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/edit_margin_top"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:src="@drawable/double_ball"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/double_mode"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="DOUBLE MODE" />
+    </RelativeLayout>
+
+
+</LinearLayout>
